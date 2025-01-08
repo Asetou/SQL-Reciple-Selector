@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="com.example.project.Recipes"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--</AnchorPane>-->
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+        </Menu>
+    </MenuBar>
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <VBox layoutX="21.0" layoutY="36.0" opacity="0.7" prefHeight="297.0" prefWidth="326.0" style="-fx-background-color: tan;">
+            <ImageView fitHeight="300.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true" />
+        </VBox>
+        <Hyperlink layoutX="254.0" layoutY="333.0" text="Link to resource" />
+        <ScrollBar layoutX="619.0" layoutY="8.0" orientation="VERTICAL" prefHeight="361.0" prefWidth="15.0" />
+        <SplitMenuButton layoutX="406.0" layoutY="23.0" mnemonicParsing="false" text="Food Category Types">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+            </items>
+        </SplitMenuButton>
+        <TextFlow layoutX="359.0" layoutY="131.0" prefHeight="205.0" prefWidth="251.0">
+            <Slider orientation="VERTICAL" prefHeight="166.0" prefWidth="15.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Type recipe instructions and ingredients here">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>
+            </TextArea>
+        </TextFlow>
+        <CheckBox layoutX="485.0" layoutY="113.0" mnemonicParsing="false" text="Favorite this recipe" />
+    </AnchorPane>
+</VBox>

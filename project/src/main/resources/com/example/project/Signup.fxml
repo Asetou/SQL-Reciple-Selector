@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.SignupController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f7e7ce;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="161.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/FreeCookingIcon.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="214.0" layoutY="40.0" prefHeight="23.0" prefWidth="173.0" text="Sign Up">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nameTXT" layoutX="161.0" layoutY="139.0" prefHeight="32.0" prefWidth="278.0" promptText="Name" />
+                <PasswordField fx:id="passwordTXT" layoutX="161.0" layoutY="184.0" prefHeight="32.0" prefWidth="278.0" promptText="Password" />
+            <TextField fx:id="calorieTXT" layoutX="161.0" layoutY="224.0" prefHeight="32.0" prefWidth="278.0" promptText="Calorie Limit" />
+                <Button fx:id="btnSave" layoutX="162.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#HandleEvents" prefHeight="32.0" prefWidth="278.0" styleClass="button2" text="Save" />
+              <Label fx:id="signupERR" alignment="CENTER" layoutX="123.0" layoutY="323.0" prefHeight="14.0" prefWidth="354.0" textAlignment="CENTER" textFill="#eb0707" />
+            <TextField fx:id="usernameTXT" layoutX="161.0" layoutY="94.0" prefHeight="32.0" prefWidth="278.0" promptText="Username" />
+            <Button fx:id="backBTN" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#HandleEvents" text="Back" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
